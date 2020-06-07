@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <form action="/cgi-bin/reg_form_script.py" method="POST">
+      <p>
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name" required/>
+      </p>
+      <p>
+        <label for="sname">Фамилия</label>
+        <input type="text" name="sname" id="sname" required/>
+      </p>
+      <p>
+        <label for="patr">Отчество</label>
+        <input type="text" name="patr" id="patr" />
+      </p>
+      <p>
+        <label for="age">Дата рождения</label>
+        <input type="date" name="age" id="age" required/>
+      </p>
+      <p>
+        <label for="gender">Пол</label>
+        <select name="gender" id="gender" required>
+          <option value="">Указать</option>
+          <option value="М">Мужской</option>
+          <option value="Ж">Женский</option>
+        </select>
+      </p>
+      <label for="email">Адрес электронной почты</label>
+      <input type="email" name="adress" id="email" required/> </p>
+      <label for="password">Пароль</label>
+      <input type="password" name="password" id="password" required/> </p>
+      <label for="mailing">Получить дополнительную скидку</label>
+      <input type="checkbox" name="mailing" id="mailing" /> </p>
+
+      <input type="submit" name="input" value="Зарегестрироваться" />
+    </form>
+  </body>
+</html>
