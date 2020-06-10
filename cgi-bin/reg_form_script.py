@@ -42,9 +42,10 @@ try:
 
     conn.autocommit = True
     values = [
-        (name, sname, patr, age, gender, adress, password, mailing, discount)#все поля для заполнения
+        (name, sname, patr, age, gender, adress, password,
+         mailing, discount)  # все поля для заполнения
     ]
-    insert = sql.SQL('INSERT INTO users VALUES {}').format(#переменная, чтобы в последующем работало помещение в бд
+    insert = sql.SQL('INSERT INTO users VALUES {}').format(  # переменная, чтобы в последующем работало помещение в бд
         sql.SQL(',').join(map(sql.Literal, values)))
     cursor.execute(insert)
     conn.close()  # закрываем
@@ -53,11 +54,15 @@ try:
          <html>
          <head>
              <meta charset="UTF-8">
+             <link rel="stylesheet" href="../stylesheets/user_page.css" />
              <title>Спасибо за регистрацию!</title>
          </head>
-         <body>""")
+         <body>
+         <div class="nav">
+      <a href="../index.html">Главная</a>
+    </div>""")
     print("<h1>Благодарим вас за регистрацию!</h1>")
-    print("<a href=\"../index.html\">На главную</a>")
+#print("<a href=\"../index.html\">На главную</a>")
     print("""</body>
          </html>""")
 except:

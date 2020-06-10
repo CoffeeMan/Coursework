@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+
+  background: #388ed1;
+}
+
+.nav a {
+  color: #fff;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 20%;
+}
+.nav a:hover {
+  background: #33abff;
+}
+h1 {
+  text-align: center;
+}
+.qr {
+  display: flex;
+  justify-content: center;
+}

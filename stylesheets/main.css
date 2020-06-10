@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.cont {
+  background: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  
+}
+
+.but {
+    margin-bottom: 40px;
+    background: transparent;
+    background: #388ed1;
+    border: groove;
+    /*border-bottom: 2px solid black;*/
+    color: #59626a;
+    transition: 0.5s;
+    font-size: 1.1rem;
+    width: 100%;
+    caret-color: rgb(255, 255, 255, 0.223);
+    
+  }
+
+  a{
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    transition: 0.5s;
+    font-size: 2rem;
+    
+  }
+

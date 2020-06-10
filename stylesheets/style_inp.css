@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+  
+    background: #388ed1;
+  }
+  
+  .nav a {
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+  }
+  .nav a:hover {
+    background: #33abff;
+  }
+
+  .form {
+    background: #eee;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+    padding-bottom: 200px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    form {
+      width: 80%;
+    }
+  }
+  
+  form input {
+    margin-bottom: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    color: #59626a;
+    transition: 0.5s;
+    font-size: 1.1rem;
+    width: 100%;
+    caret-color: rgb(255, 255, 255, 0.223);
+  }
+  
+  form input:focus {
+    outline: transparent;
+    border-bottom: 2px solid #dbe0e3;
+  }
+  
+  form label {
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  form label span {
+    position: absolute;
+    top: 30px;
+    color: rgb(29, 20, 20);
+    pointer-events: none;
+    transition: 0.1s;
+  }
+  span.label {
+    margin-left: 40px;
+    font-size: 1.2rem;
+  }
+  
+  form h2 {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .but:hover{
+      background: #ced7df;
+      font-size: 15pt;
+  }

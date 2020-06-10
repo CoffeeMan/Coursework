@@ -2,15 +2,28 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/style_inp.css" />
     <title>Вход</title>
   </head>
   <body>
+    <div class="nav">
+      <a href="index.html">Главная</a>
+    </div>
+    <div class="form">
     <form action="/cgi-bin/inp_form_script.py" method="POST">
-      <label for="email">Адрес электронной почты</label>
+      <h2>Вход</h2>
+      <label for="email">
       <input type="email" name="user_adress" id="email" required/> </p>
-      <label for="password">Пароль</label>
+      <span class="label">Адрес электронной почты</span>
+    </label>
+      <label for="password">
       <input type="password" name="user_password" id="password" required/> </p>
-      <input type="submit" name="input" value="Войти" />
+      <span class="label">Пароль</span>
+    </label>
+    <label for="input">
+      <input type="submit" name="input" value="Войти" class="but" />
+    </label>
     </form>
+  </div>
   </body>
 </html>

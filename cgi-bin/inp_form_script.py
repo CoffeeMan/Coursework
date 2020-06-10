@@ -39,17 +39,20 @@ try:
         <html>
         <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="../stylesheets/user_page.css" />
             <title>Страница пользователя</title>
             </head>
-            <body>""")
+            <body>
+            <div class="nav">
+      <a href="../index.html">Главная</a>
+    </div>""")
         print("<h1>Добрый день, " + info[0]
               [1] + " " + info[0][0] + "!"+"</h1>")
-        print("<br />Ваш qr-code:<br />")
+        #print("<br />Ваш qr-code:<br />")
         print(
-            '  <img src=\"../qr-codes\\'+str(info[0][9])+'.png\">  ')
+            '  <span class="qr"><img src=\"../qr-codes\\'+str(info[0][9])+'.png\"></span>  ')
         print("""</body>
             </html>""")
-        
 
     else:  # если пароль оказался неверным
         print("Content-type: text/html\n")

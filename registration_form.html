@@ -2,48 +2,65 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="stylesheets/style_reg.css" />
     <title>Регистрация</title>
   </head>
   <body>
     
     <div class="nav">
       <a href="index.html">Главная</a>
-	    <a href="#">О нас</a>
     </div>
-    <form action="/cgi-bin/reg_form_script.py" method="POST">
-      <p>
-        <label for="name">Имя</label>
+    <div class="form">
+    <form action="/cgi-bin/reg_form_script.py" method="POST" name="form">
+      <h2>Регистрация</h2>
+        <label for="name">
         <input type="text" name="name" id="name" required/>
-      </p>
-      <p>
-        <label for="sname">Фамилия</label>
+        <span class="label">Имя</span>
+        </label>
+      
+      
+        <label for="sname">
         <input type="text" name="sname" id="sname" required/>
-      </p>
-      <p>
-        <label for="patr">Отчество</label>
+        <span class="label">Фамилия</span>
+        </label>
+      
+      
+        <label for="patr">
         <input type="text" name="patr" id="patr" />
-      </p>
-      <p>
-        <label for="age">Дата рождения</label>
+        <span class="label">Отчество</span>
+      </label>
+      
+        <label for="age">
         <input type="date" name="age" id="age" required/>
-      </p>
-      <p>
-        <label for="gender">Пол</label>
+        <span class="label">Дата рождения</span>
+      </label>
+      
+        <label for="gender">
         <select name="gender" id="gender" required>
           <option value="">Указать</option>
           <option value="М">Мужской</option>
           <option value="Ж">Женский</option>
         </select>
-      </p>
-      <label for="email">Адрес электронной почты</label>
+        <span class="label">Пол</span>
+      </label>
+      <br /><br />
+      <label for="email">
       <input type="email" name="adress" id="email" required/> </p>
-      <label for="password">Пароль</label>
+      <span class="label">Адрес электронной почты</span>
+      </label>
+      <label for="password">
       <input type="password" name="password" id="password" required/> </p>
-      <label for="mailing">Получить дополнительную скидку</label>
+      <span class="label">Пароль</span>
+      </label>
+      <label for="mailing">
       <input type="checkbox" name="mailing" id="mailing" /> </p>
-
-      <input type="submit" name="input" value="Зарегестрироваться" />
+      <span class="label">Я хочу получить доп скидку и согласен на рассылку писем</span>
+    </label>
+    <br />
+    <label for="input">
+      <input type="submit" name="input" value="зарегестрироваться" class="but"/>
+      </label>
     </form>
+    </div>
   </body>
 </html>
